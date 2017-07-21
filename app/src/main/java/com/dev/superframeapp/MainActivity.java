@@ -4,14 +4,13 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import com.dev.superframe.base.BaseActivity;
 import com.dev.superframe.ui.dialog.KeyBoardDailog;
-import com.dev.superframe.utils.glide.GlideUtils;
+import com.dev.superframe.utils.glide.GlideUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,11 +53,11 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initView() {
-        GlideUtils.loadImageViewCircle(getActivity(), "http://www.3vsheji.com/uploads/allimg/151222/1F92594D_0.jpg", R.drawable.icon_image_err, ivDisplay);
-//        GlideUtils.loadImageViewBlur(getActivity(),"http://www.3vsheji.com/uploads/allimg/151222/1F92594D_0.jpg",ivDisplay);
-//        GlideUtils.loadImageViewThumbnail(getActivity(),"http://www.3vsheji.com/uploads/allimg/151222/1F92594D_0.jpg",ivDisplay);
-//        GlideUtils.loadImageViewGrayscale(getActivity(),"http://www.3vsheji.com/uploads/allimg/151222/1F92594D_0.jpg",R.drawable.icon_image_err,ivDisplay);
-//        GlideUtils.loadImageViewAnim(getActivity(),"http://www.3vsheji.com/uploads/allimg/151222/1F92594D_0.jpg",R.anim.progress_loading,ivDisplay);
+        GlideUtil.loadImageViewCircle(getActivity(), "http://www.3vsheji.com/uploads/allimg/151222/1F92594D_0.jpg", R.drawable.icon_image_err, ivDisplay);
+//        GlideUtil.loadImageViewBlur(getActivity(),"http://www.3vsheji.com/uploads/allimg/151222/1F92594D_0.jpg",ivDisplay);
+//        GlideUtil.loadImageViewThumbnail(getActivity(),"http://www.3vsheji.com/uploads/allimg/151222/1F92594D_0.jpg",ivDisplay);
+//        GlideUtil.loadImageViewGrayscale(getActivity(),"http://www.3vsheji.com/uploads/allimg/151222/1F92594D_0.jpg",R.drawable.icon_image_err,ivDisplay);
+//        GlideUtil.loadImageViewAnim(getActivity(),"http://www.3vsheji.com/uploads/allimg/151222/1F92594D_0.jpg",R.anim.progress_loading,ivDisplay);
     }
 
     @Override
@@ -153,19 +152,5 @@ public class MainActivity extends BaseActivity {
                 toActivity(new Intent(getActivity(), AvatarActivity.class));
                 break;
         }
-    }
-
-    @Override
-    public boolean onKeyUp(int keyCode, KeyEvent event) {
-
-        switch (keyCode) {
-            case KeyEvent.KEYCODE_BACK:
-                if(keyBoardDailog!=null) {
-                    keyBoardDailog.dismiss();
-                }
-                return true;
-        }
-
-        return super.onKeyUp(keyCode, event);
     }
 }

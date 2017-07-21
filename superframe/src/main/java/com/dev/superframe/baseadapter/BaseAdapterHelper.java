@@ -38,7 +38,7 @@ import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.dev.superframe.utils.glide.GlideUtils;
+import com.dev.superframe.utils.glide.GlideUtil;
 
 
 /**
@@ -290,7 +290,7 @@ public class BaseAdapterHelper {
      */
     public BaseAdapterHelper setImageUrl(int viewId, String imageUrl) {
         ImageView view = retrieveView(viewId);
-        GlideUtils.loadImageView(context, imageUrl, view);
+        GlideUtil.loadImageView(context, imageUrl, view);
         return this;
     }
 
@@ -310,7 +310,7 @@ public class BaseAdapterHelper {
      */
     public BaseAdapterHelper setImageUrl(int viewId, String imageUrl, int emptyImgId) {
         ImageView view = retrieveView(viewId);
-        GlideUtils.loadImageView(context, emptyImgId, imageUrl, view);
+        GlideUtil.loadImageView(context, emptyImgId, imageUrl, view);
         return this;
     }
 

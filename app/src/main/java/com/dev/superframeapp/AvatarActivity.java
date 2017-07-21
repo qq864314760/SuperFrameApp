@@ -76,7 +76,7 @@ public class AvatarActivity extends BaseActivity {
                 String path = SelectAvatarUtil.setPicToView(data);
                 File file = new File(path);
                 Glide.with(this).load(file).into(civAvatar);
-                //GlideUtils.loadImageViewBySource(getActivity(), R.drawable.no_pic, GlideUtils.SOURCCE_SD, path, civAvatar);
+                //GlideUtil.loadImageViewBySource(getActivity(), R.drawable.no_pic, GlideUtil.SOURCCE_SD, path, civAvatar);
             }
         }
     }

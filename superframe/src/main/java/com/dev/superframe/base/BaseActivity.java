@@ -13,15 +13,14 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.dev.superframe.R;
 import com.dev.superframe.base.presenter.ActivityPresenter;
-import com.dev.superframe.manger.SystemBarTintManager;
 import com.dev.superframe.manger.ThreadManager;
 import com.dev.superframe.utils.StringUtil;
+import com.dev.superframe.utils.SystemBarTintUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -101,30 +100,7 @@ public abstract class BaseActivity extends SwipeBackActivity implements Activity
     @Override
     public void setContentView(int layoutResID) {
         super.setContentView(layoutResID);
-
-        // 状态栏沉浸，4.4+生效 <<<<<<<<<<<<<<<<<
-        //不保留状态栏
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            //透明状态栏
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            //Android5.0版本
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
-                        | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-                getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                        | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-                getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-                //设置状态栏颜色
-                getWindow().setStatusBarColor(getResources().getColor(R.color.theme_color));
-            }
-            //虚拟键盘
-            //getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-            SystemBarTintManager tintManager = new SystemBarTintManager(this);
-            tintManager.setStatusBarTintEnabled(true);
-            tintManager.setStatusBarTintResource(R.color.theme_color);//状态背景色，可传drawable资源
-        }
-        // 状态栏沉浸，4.4+生效 >>>>>>>>>>>>>>>>>
-
+        SystemBarTintUtil.setSystemBarTint(getActivity(),R.color.theme_color);
         tvBaseTitle = (TextView) findViewById(R.id.tv_base_title);//绑定默认标题TextView
     }
 
@@ -137,19 +113,11 @@ public abstract class BaseActivity extends SwipeBackActivity implements Activity
      * 退出时之前的界面进入动画,可在finish();前通过改变它的值来改变动画效果
      */
     protected int enterAnim = R.anim.fade;
+
     /**
      * 退出时该界面动画,可在finish();前通过改变它的值来改变动画效果
      */
     protected int exitAnim = R.anim.right_push_out;
-
-    //	/**通过id查找并获取控件，使用时不需要强转
-    //	 * @param id
-    //	 * @return
-    //	 */
-    //	@SuppressWarnings("unchecked")
-    //	public <V extends View> V findViewById(int id) {
-    //		return (V) view.findViewById(id);
-    //	}
 
     /**
      * 通过id查找并获取控件，并setOnClickListener
@@ -189,6 +157,19 @@ public abstract class BaseActivity extends SwipeBackActivity implements Activity
             tvTitle.setText(StringUtil.getCurrentString());
         }
         return tvTitle;
+    }
+
+    /**
+     * 自动把标题设置为上个Activity传入的INTENT_TITLE，建议在子类initView中使用
+     *
+     * @param title
+     * @return tvTitle 返回tvTitle是为了可以写成一行，如 tvTitle = autoSetTitle((TextView) findViewById(titleResId));
+     * @must 在UI线程中调用
+     */
+    protected void autoSetTitle(String title) {
+        if (tvBaseTitle != null) {
+            tvBaseTitle.setText(StringUtil.getString(title));
+        }
     }
 
     //自动设置标题方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
