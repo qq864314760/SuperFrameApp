@@ -1,0 +1,6 @@
+开发超级快的APP框架
+
+KLog/library/src/main/AndroidManifest.xml
+
+
+/storage/emulated/0/SelctAvatar/PhotoCache/20170721180324.jpg

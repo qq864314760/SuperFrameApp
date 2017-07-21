@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="280dp"
     android:layout_height="wrap_content"
-    android:background="@drawable/bg_alertdialog"
+    android:background="@drawable/bg_white_radius5"
     android:clickable="true"
     android:orientation="vertical"
     android:padding="20dp">

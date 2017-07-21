@@ -71,7 +71,7 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.btn_back, R.id.btn_dailog, R.id.btn_permisson, R.id.btn_pulltorefresh})
+    @OnClick({R.id.btn_back, R.id.btn_dailog, R.id.btn_permisson, R.id.btn_pulltorefresh,R.id.btn_selectavatar})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_back:
@@ -148,6 +148,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.btn_pulltorefresh:
                 toActivity(new Intent(getActivity(), PullToRefreshActivity.class));
+                break;
+            case R.id.btn_selectavatar:
+                toActivity(new Intent(getActivity(), AvatarActivity.class));
                 break;
         }
     }
