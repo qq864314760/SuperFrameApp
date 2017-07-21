@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="StyleActivity">
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/activity_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="StyleImmersionActivity">
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/activity_bg</item>
+        <item name="android:orientation">vertical</item>
+        <!-- 状态栏沉浸 <<<<<<<<<<<<<<<<< -->
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <!-- 状态栏沉浸 >>>>>>>>>>>>>>>>> -->
+    </style>
+
+    <!--弹窗的样式 <<<<<<<<<<<<<<<<<<<-->
+    <style name="AlertDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--弹窗的样式 <<<<<<<<<<<<<<<<<<<-->
+
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="wrap_match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- divider <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+    <style name="divider">
+        <item name="android:background">@color/alpha_3</item>
+    </style>
+
+    <style name="divider_horizontal_1dp" parent="divider">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="divider_horizontal_1dp_gray" parent="divider_horizontal_1dp">
+        <item name="android:background">@color/gray_2</item>
+    </style>
+
+    <style name="divider_vertical_1dp" parent="divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="divider_vertical_1dp_gray" parent="divider_vertical_1dp">
+        <item name="android:background">@color/gray_2</item>
+    </style>
+
+    <style name="divider_vertical_1dp_white" parent="divider_vertical_1dp">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="divider_horizontal_1px" parent="divider">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="divider_horizontal_1px_gray" parent="divider_horizontal_1px">
+        <item name="android:background">@color/line_color_deep</item>
+    </style>
+
+    <style name="divider_vertical_1px" parent="divider">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="divider_vertical_1px_gray" parent="divider_vertical_1px">
+        <item name="android:background">@color/gray_2</item>
+    </style>
+
+    <style name="divider_vertical_1px_white" parent="divider_vertical_1px">
+        <item name="android:background">@color/white</item>
+    </style>
+    <!-- divider >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <!-- text <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <style name="text" parent="wrap_wrap">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="text_huge" parent="text">
+        <item name="android:textSize">@dimen/text_size_huge</item>
+    </style>
+
+    <style name="text_huge_white" parent="text_huge">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_huge_black" parent="text_huge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_large" parent="text">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="text_large_white" parent="text_large">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_large_black" parent="text_large">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_big" parent="text">
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
+
+    <style name="text_big_white" parent="text_big">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_big_black" parent="text_big">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_middle" parent="text">
+        <item name="android:textSize">@dimen/text_size_middle</item>
+    </style>
+
+    <style name="text_middle_white" parent="text_middle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_middle_black" parent="text_middle">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_middle_blue" parent="text_middle">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="text_title" parent="text">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="text_small" parent="text">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="text_small_white" parent="text_small">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_small_black" parent="text_small">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_micro" parent="text">
+        <item name="android:textSize">@dimen/text_size_micro</item>
+    </style>
+
+    <style name="text_micro_white" parent="text_micro">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_small_blue" parent="text_small">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="text_micro_black" parent="text_micro">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!-- text >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <!-- linearLayout horizontal<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <style name="ll_horizontal_wrap_wrap" parent="wrap_wrap">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ll_horizontal_match_match" parent="match_match">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ll_horizontal_wrap_match" parent="wrap_match">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ll_horizontal_match_wrap" parent="match_wrap">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- linearLayout horizontal >>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <!-- linearLayout vertical  <<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <style name="ll_vertical_wrap_wrap" parent="wrap_wrap">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ll_vertical_match_match" parent="match_match">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ll_vertical_wrap_match" parent="wrap_match">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ll_vertical_match_wrap" parent="match_wrap">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- linearLayout vertical >>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="iv_base_back" type="id">false</item>
+    <item name="tv_base_title" type="id">false</item>
+    <item name="iv_base_go" type="id">false</item>
+    <item name="lv_base" type="id">false</item>
+</resources>
