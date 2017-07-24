@@ -64,7 +64,7 @@ public class SelectAvatarUtil {
                                         openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(SDFileUtil.getPhotoCachePath(), "temp.jpg")));
                                         ((Activity) context).startActivityForResult(openCameraIntent, OpenCamera);
                                     } else {
-                                        Uri imageUri = FileProvider.getUriForFile(context, "com.selectavatar_camera_photos.fileprovider", new File(SDFileUtil.getPhotoCachePath(), "temp.jpg"));
+                                        Uri imageUri = FileProvider.getUriForFile(context, "com.m_camera_photos.fileprovider", new File(SDFileUtil.getPhotoCachePath(), "temp.jpg"));
                                         openCameraIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                                         openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
                                         ((Activity) context).startActivityForResult(openCameraIntent, OpenCamera);

@@ -17,7 +17,7 @@ import android.widget.HorizontalScrollView;
 import android.widget.Toast;
 
 import com.dev.selectmultiimage.ImageBucketActivity;
-import com.dev.selectmultiimage.PreviewActivity;
+import com.dev.selectmultiimage.PreviewPhotoActivity;
 import com.dev.selectmultiimage.R;
 import com.dev.selectmultiimage.adapter.SelectGridAdapter;
 import com.dev.selectmultiimage.view.sheet.SheetFragment;
@@ -104,7 +104,7 @@ public class SelectMultiImageUtil {
                                         openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(SDFileUtil.getPhotoCachePath(), "temp.jpg")));
                                         ((Activity) context).startActivityForResult(openCameraIntent, OpenCamera);
                                     } else {
-                                        Uri imageUri = FileProvider.getUriForFile(context, "com.selectmultiimage_camera_photos.fileprovider", new File(SDFileUtil.getPhotoCachePath(), "temp.jpg"));
+                                        Uri imageUri = FileProvider.getUriForFile(context, "com.m_camera_photos.fileprovider", new File(SDFileUtil.getPhotoCachePath(), "temp.jpg"));
                                         openCameraIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                                         openCameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
                                         ((Activity) context).startActivityForResult(openCameraIntent, OpenCamera);
@@ -136,11 +136,11 @@ public class SelectMultiImageUtil {
      *
      * @param path
      */
-    public static void startPhotoZoom(Context context, String path, int requestCode) {
-        Intent intent = new Intent(context, PreviewActivity.class);
+    public static void startPhotoZoom(Context context, String path) {
+        Intent intent = new Intent(context, PreviewPhotoActivity.class);
 //        intent.setDataAndType(uri, "image/*");
         intent.putExtra("path", path);
-        ((Activity) context).startActivityForResult(intent, requestCode);
+        ((Activity) context).startActivityForResult(intent, OpenPreview);
     }
 
     /**
@@ -149,15 +149,6 @@ public class SelectMultiImageUtil {
      * @param picdata
      */
     public static void setPicToView(Intent picdata, List<String> list) {
-//        Bitmap bitmap = null;
-//        byte[] bis = picdata.getByteArrayExtra("bitmap");
-//        bitmap = BitmapFactory.decodeByteArray(bis, 0, bis.length);
-//        String localImg = System.currentTimeMillis() + ".JPEG";
-//
-//        if (bitmap != null) {
-//            SDPathUtils.saveBitmap(bitmap, localImg);
-//            Log.e("保存图片", SDPathUtils.getCachePath() + localImg);
-//        }
         String imgPath = picdata.getStringExtra("path");
         list.add(imgPath);
     }

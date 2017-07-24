@@ -69,7 +69,7 @@ public class AvatarActivity extends BaseActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == SelectAvatarUtil.OpenCamera) {
             SelectAvatarUtil.startPhotoZoom(getActivity(), SDFileUtil.getPhotoCachePath() + "temp.jpg");
-        } else if (requestCode == SelectAvatarUtil.OpenAlbum) {
+        } else if (requestCode == SelectAvatarUtil.OpenAlbum && data != null) {
             SelectAvatarUtil.startPhotoZoom(getActivity(), SelectAvatarUtil.getRealFilePath(getActivity(), data.getData()));
         } else if (requestCode == SelectAvatarUtil.OpenPreview) {
             if (data != null) {

@@ -6,10 +6,10 @@
 
     <ImageView
         android:id="@+id/iv_display"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:layout_weight="1"
-        android:scaleType="fitCenter"></ImageView>
+        android:scaleType="fitCenter"/>
 
     <LinearLayout
         android:id="@+id/ll_bottom"

@@ -129,7 +129,7 @@ public class SheetFragment extends Fragment {
             public void run() {
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.add(SheetFragment.this, tag);
-                transaction.addToBackStack(null);
+                //transaction.addToBackStack(null);//返回键排除
                 transaction.commitAllowingStateLoss();
             }
         });

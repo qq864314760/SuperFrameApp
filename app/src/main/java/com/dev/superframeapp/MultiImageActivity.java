@@ -90,8 +90,8 @@ public class MultiImageActivity extends BaseActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == SelectMultiImageUtil.OpenCamera && data != null) {
-            SelectMultiImageUtil.startPhotoZoom(getActivity(), SDFileUtil.getPhotoCachePath() + "temp.jpg", 3);
+        if (requestCode == SelectMultiImageUtil.OpenCamera) {
+            SelectMultiImageUtil.startPhotoZoom(getActivity(), SDFileUtil.getPhotoCachePath() + "temp.jpg");
         } else if (requestCode == SelectMultiImageUtil.OpenAlbum && data != null) {
             SelectMultiImageUtil.setAlbumToView(data, urlList);
             SelectMultiImageUtil.initSelectPictures(getActivity(), hsvPics, gvPics, urlList, AppConstantValue.SELECT_IMG_NUM, new DelClickListener());

@@ -215,7 +215,7 @@ public abstract class BaseActivity extends SwipeBackActivity implements Activity
         runUiThread(new Runnable() {
             @Override
             public void run() {
-                if (LoadingDialog.mLoadingDialog.isShowing() == true) {
+                if (LoadingDialog.mLoadingDialog != null && LoadingDialog.mLoadingDialog.isShowing() == true) {
                     LoadingDialog.cancelDialogForLoading();
                 }
             }
@@ -292,7 +292,7 @@ public abstract class BaseActivity extends SwipeBackActivity implements Activity
     //获取Intent传值方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     //获取View方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    public View getView( int viewId) {
+    public View getView(int viewId) {
         View view = LayoutInflater.from(getActivity()).inflate(viewId, null);
         return view;
     }

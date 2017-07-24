@@ -169,7 +169,6 @@ public class PreviewActivity extends Activity {
      * 图片旋转
      */
     private Bitmap setBitmapRotate(Bitmap bitmap, float degrees) {
-
         Matrix matrix = new Matrix();
         matrix.reset();
         matrix.setRotate(degrees);

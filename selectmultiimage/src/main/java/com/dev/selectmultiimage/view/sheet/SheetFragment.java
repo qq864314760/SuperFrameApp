@@ -90,10 +90,10 @@ public class SheetFragment extends Fragment {
             tvTitle.setVisibility(View.GONE);
         }
 
-        TextView pop_cancel = view.findViewById(R.id.tv_cancel);
-        pop_cancel.setVisibility(View.VISIBLE);
-        pop_cancel.setText("取消");
-        pop_cancel.setOnClickListener(new View.OnClickListener() {
+        TextView tvCancel = view.findViewById(R.id.tv_cancel);
+        tvCancel.setVisibility(View.VISIBLE);
+        tvCancel.setText("取消");
+        tvCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (onCancelListener != null) {
@@ -128,7 +128,7 @@ public class SheetFragment extends Fragment {
             public void run() {
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.add(SheetFragment.this, tag);
-                transaction.addToBackStack(null);
+                //transaction.addToBackStack(null);//返回键排除
                 transaction.commitAllowingStateLoss();
             }
         });
@@ -246,26 +246,6 @@ public class SheetFragment extends Fragment {
 
     public void setOnCancelListener(OnCancelListener onCancelListener) {
         this.onCancelListener = onCancelListener;
-    }
-
-    public static int dp2px(Context context, float dp) {
-        final float scale = context.getResources().getDisplayMetrics().density;
-        return (int) (dp * scale + 0.5f);
-    }
-
-    /**
-     * 获取状态栏高度
-     *
-     * @param context
-     * @return
-     */
-    public static int getStatusBarHeight(Context context) {
-        int result = 0;
-        int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
-        if (resourceId > 0) {
-            result = context.getResources().getDimensionPixelSize(resourceId);
-        }
-        return result;
     }
 
     /**
