@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/SuperFrameApp.iml" filepath="$PROJECT_DIR$/SuperFrameApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/selectavatar/selectavatar.iml" filepath="$PROJECT_DIR$/selectavatar/selectavatar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/selectmultiimage/selectmultiimage.iml" filepath="$PROJECT_DIR$/selectmultiimage/selectmultiimage.iml" />
       <module fileurl="file://$PROJECT_DIR$/superframe/superframe.iml" filepath="$PROJECT_DIR$/superframe/superframe.iml" />
     </modules>
   </component>

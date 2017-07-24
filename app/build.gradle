@@ -32,9 +32,10 @@ dependencies {
     //butterknife注册机制
     compile 'com.jakewharton:butterknife:8.6.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
-    compile project(':superframe')
     //    compile 'in.srain.cube:ptr-load-more:1.0.5'
+    compile project(':superframe')
     //    compile 'in.srain.cube:clog:1.0.2'
     //    compile 'in.srain.cube:cube-sdk:1.0.44@aar'
     compile project(':selectavatar')
+    compile project(':selectmultiimage')
 }

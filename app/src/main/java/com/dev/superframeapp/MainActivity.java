@@ -4,12 +4,14 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import com.dev.superframe.base.BaseActivity;
 import com.dev.superframe.ui.dialog.KeyBoardDailog;
+import com.dev.superframe.ui.dialog.LoadingDialog;
 import com.dev.superframe.utils.glide.GlideUtil;
 
 import java.util.ArrayList;
@@ -32,7 +34,7 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.iv_display)
     ImageView ivDisplay;
 
-    private  KeyBoardDailog keyBoardDailog;
+    private KeyBoardDailog keyBoardDailog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +72,7 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.btn_back, R.id.btn_dailog, R.id.btn_permisson, R.id.btn_pulltorefresh,R.id.btn_selectavatar})
+    @OnClick({R.id.btn_back, R.id.btn_dailog, R.id.btn_permisson, R.id.btn_load, R.id.btn_pulltorefresh, R.id.btn_selectavatar, R.id.btn_multiimage})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_back:
@@ -145,11 +147,23 @@ public class MainActivity extends BaseActivity {
                     }
                 });
                 break;
+            case R.id.btn_load:
+                LoadingDialog.showDialogForLoading(getActivity());
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        LoadingDialog.cancelDialogForLoading();
+                    }
+                },2000);
+                break;
             case R.id.btn_pulltorefresh:
                 toActivity(new Intent(getActivity(), PullToRefreshActivity.class));
                 break;
             case R.id.btn_selectavatar:
                 toActivity(new Intent(getActivity(), AvatarActivity.class));
+                break;
+            case R.id.btn_multiimage:
+                toActivity(new Intent(getActivity(), MultiImageActivity.class));
                 break;
         }
     }
