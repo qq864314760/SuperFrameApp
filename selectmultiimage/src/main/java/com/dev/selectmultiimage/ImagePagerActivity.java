@@ -41,7 +41,7 @@ public class ImagePagerActivity extends Activity {
     public static final String INTENT_POSITION = "position";
     public static final String INTENT_IMAGESIZE = "imagesize";
 
-    private List<View> guideViewList = new ArrayList<View>();
+    private List<View> viewList = new ArrayList<View>();
     private LinearLayout llIndicator;
     public ImageSize imageSize;
     private int startPos;
@@ -79,8 +79,8 @@ public class ImagePagerActivity extends Activity {
 
             @Override
             public void onPageSelected(int position) {
-                for (int i = 0; i < guideViewList.size(); i++) {
-                    guideViewList.get(i).setSelected(i == position ? true : false);
+                for (int i = 0; i < viewList.size(); i++) {
+                    viewList.get(i).setSelected(i == position ? true : false);
                 }
             }
 
@@ -91,7 +91,7 @@ public class ImagePagerActivity extends Activity {
         });
         vpDisplay.setCurrentItem(startPos);
 
-        addGuideView(llIndicator, startPos, imgUrls);
+        addIndicatorView(llIndicator, startPos, imgUrls);
     }
 
     public Activity getActivity() {
@@ -104,17 +104,17 @@ public class ImagePagerActivity extends Activity {
         imageSize = (ImageSize) getIntent().getSerializableExtra(INTENT_IMAGESIZE);
     }
 
-    private void addGuideView(LinearLayout guideGroup, int startPos, ArrayList<String> imgUrls) {
+    private void addIndicatorView(LinearLayout guideGroup, int startPos, ArrayList<String> imgUrls) {
         if (imgUrls != null && imgUrls.size() > 0) {
-            guideViewList.clear();
+            viewList.clear();
             for (int i = 0; i < imgUrls.size(); i++) {
                 View view = new View(this);
-                view.setBackgroundResource(R.drawable.uploadpictures_guide_bg_selector);
+                view.setBackgroundResource(R.drawable.bg_indicator_selector);
                 view.setSelected(i == startPos ? true : false);
                 LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(DensityUtil.dip2px(getActivity(), 6), DensityUtil.dip2px(getActivity(), 6));
                 layoutParams.setMargins(10, 0, 0, 0);
                 guideGroup.addView(view, layoutParams);
-                guideViewList.add(view);
+                viewList.add(view);
             }
         }
     }
@@ -188,7 +188,7 @@ public class ImagePagerActivity extends Activity {
                         .load(imgurl)
                         .diskCacheStrategy(DiskCacheStrategy.ALL)//缓存多个尺寸
                         .thumbnail(0.1f)//先显示缩略图  缩略图为原图的1/10
-                        .error(R.drawable.uploadpictures_no_pic)
+                        .error(R.drawable.no_image)
                         .into(new GlideDrawableImageViewTarget(imageView) {
                             @Override
                             public void onLoadStarted(Drawable placeholder) {
@@ -251,12 +251,6 @@ public class ImagePagerActivity extends Activity {
 
     }
 
-    @Override
-    protected void onDestroy() {
-        guideViewList.clear();
-        super.onDestroy();
-    }
-
     public static class ImageSize implements Serializable {
 
         private int width;
@@ -282,5 +276,11 @@ public class ImagePagerActivity extends Activity {
         public void setWidth(int width) {
             this.width = width;
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        viewList.clear();
+        super.onDestroy();
     }
 }

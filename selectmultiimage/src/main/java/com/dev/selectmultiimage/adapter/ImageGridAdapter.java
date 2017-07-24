@@ -120,10 +120,10 @@ public class ImageGridAdapter extends BaseAdapter {
         cache.displayBmp(context, holder.ivDisplay, item.thumbnailPath, item.imagePath,
                 callback);
         if (item.isSelected) {
-            holder.ivSelected.setImageResource(R.drawable.uploadpictures_check_pre);
-            holder.tvBorder.setBackgroundResource(R.drawable.uploadpictures_bg_relatly_line);
+            holder.ivSelected.setImageResource(R.drawable.icon_check_pressed);
+            holder.tvBorder.setBackgroundResource(R.drawable.bg_red_border);
         } else {
-            holder.ivSelected.setImageResource(R.drawable.uploadpictures_check_nor);
+            holder.ivSelected.setImageResource(R.drawable.icon_check_normal);
             holder.tvBorder.setBackgroundColor(Color.TRANSPARENT);
         }
         holder.ivDisplay.setOnClickListener(new OnClickListener() {
@@ -135,15 +135,15 @@ public class ImageGridAdapter extends BaseAdapter {
                 if ((listSize + selectTotal) < select_img_num) {
                     item.isSelected = !item.isSelected;
                     if (item.isSelected) {
-                        holder.ivSelected.setImageResource(R.drawable.uploadpictures_check_pre);
-                        holder.tvBorder.setBackgroundResource(R.drawable.uploadpictures_bg_relatly_line);
+                        holder.ivSelected.setImageResource(R.drawable.icon_check_pressed);
+                        holder.tvBorder.setBackgroundResource(R.drawable.bg_red_border);
                         selectTotal++;
                         if (textcallback != null)
                             textcallback.onListen(selectTotal);
                         map.put(path, path);
 
                     } else if (!item.isSelected) {
-                        holder.ivSelected.setImageResource(R.drawable.uploadpictures_check_nor);
+                        holder.ivSelected.setImageResource(R.drawable.icon_check_normal);
                         holder.tvBorder.setBackgroundColor(Color.TRANSPARENT);
                         selectTotal--;
                         if (textcallback != null)
@@ -153,7 +153,7 @@ public class ImageGridAdapter extends BaseAdapter {
                 } else if ((listSize + selectTotal) >= select_img_num) {
                     if (item.isSelected == true) {
                         item.isSelected = !item.isSelected;
-                        holder.ivSelected.setImageResource(R.drawable.uploadpictures_check_nor);
+                        holder.ivSelected.setImageResource(R.drawable.icon_check_normal);
                         holder.tvBorder.setBackgroundColor(Color.TRANSPARENT);
                         selectTotal--;
                         map.remove(path);

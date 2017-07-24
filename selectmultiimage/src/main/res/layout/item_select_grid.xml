@@ -16,7 +16,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/uploadpictures_no_pic" />
+            android:src="@drawable/no_image" />
 
         <Button
             android:id="@+id/btn_del"
@@ -24,7 +24,7 @@
             android:layout_height="20dp"
             android:layout_alignParentRight="true"
             android:layout_margin="5dp"
-            android:background="@drawable/uploadpictures_btn_del"
+            android:background="@drawable/btn_del"
             android:focusable="false" />
     </RelativeLayout>
 

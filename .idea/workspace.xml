@@ -10,67 +10,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a5856bb-2950-467d-a367-0c8dea23ed48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/dev/superframeapp/MultiImageActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_multiimage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/androidTest/java/com/dev/selectmultiimage/ExampleInstrumentedTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImageBucketActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImageGridActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImagePagerActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/PreviewActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/ImageBucketAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/ImageGridAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/SelectGridAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/bean/ImageBucket.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/bean/ImageItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/AlbumHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/BitmapCacheUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/DensityUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/SDFileUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/SelectMultiImageUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/compress/BitmapUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/compress/CompressHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/compress/FileUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/compress/ImageUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/compress/StringUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/view/sheet/ListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/view/sheet/SheetFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_imagebucket.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_imagegrid.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_imagepager.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_preview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/fragment_sheet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/item_image_bucket.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/item_image_grid.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/item_pager_image.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/item_select_grid.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/item_sheet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/xml/file_paths.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/test/java/com/dev/selectmultiimage/ExampleUnitTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_gray_selector.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_green_selector.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_btn_gray.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_btn_green.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/dev/superframeapp/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/dev/superframeapp/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selectavatar/src/main/java/com/dev/selectavatar/utils/compress/CompressHelper.java" afterPath="$PROJECT_DIR$/selectavatar/src/main/java/com/dev/selectavatar/utils/compress/CompressHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selectavatar/src/main/res/layout/activity_preview.xml" afterPath="$PROJECT_DIR$/selectavatar/src/main/res/layout/activity_preview.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selectavatar/src/main/res/layout/fragment_sheet.xml" afterPath="$PROJECT_DIR$/selectavatar/src/main/res/layout/fragment_sheet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selectavatar/src/main/res/layout/item_sheet.xml" afterPath="$PROJECT_DIR$/selectavatar/src/main/res/layout/item_sheet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/superframe/src/main/java/com/dev/superframe/ui/dialog/LoadingDialog.java" afterPath="$PROJECT_DIR$/superframe/src/main/java/com/dev/superframe/ui/dialog/LoadingDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/superframe/src/main/res/layout/layout_dialog_loading.xml" afterPath="$PROJECT_DIR$/superframe/src/main/res/layout/layout_dialog_loading.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/superframe/superframe.iml" afterPath="$PROJECT_DIR$/superframe/superframe.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImagePagerActivity.java" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImagePagerActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/ImageGridAdapter.java" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/ImageGridAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/SelectGridAdapter.java" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/SelectGridAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/BitmapCacheUtil.java" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/BitmapCacheUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_preview.xml" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_preview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/item_image_bucket.xml" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/item_image_bucket.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/item_select_grid.xml" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/item_select_grid.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/uploadpictures_add_pic.png" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/select_image.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/uploadpictures_btn_ccw.png" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_left_rotate.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/uploadpictures_btn_cw.png" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_right_rotate.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/uploadpictures_btn_del.png" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_del.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/uploadpictures_check_nor.png" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/icon_check_normal.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/uploadpictures_check_pre.png" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/icon_check_pressed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/uploadpictures_no_pic.png" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/no_image.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_bg_relatly_line.xml" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/bg_red_border.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_btn_gray_click.xml" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_gray_pressed.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_btn_gray_normal.xml" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_gray_normal.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_btn_green_click.xml" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_green_pressed.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_btn_green_normal.xml" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_green_normal.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_guide_bg_selector.xml" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/bg_indicator_selector.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_shape_guide_bg_defaut.xml" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/bg_indicator_defaut.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_shape_guide_bg_focus.xml" afterPath="$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/bg_indicator_focus.xml" />
     </list>
     <ignored path="SuperFrameApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,91 +68,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ImageBucketActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImageBucketActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageGridActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImageGridActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="114" column="25" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5023#5187#0" expanded="true" />
-                <element signature="e#5186#5187#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PreviewActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PreviewActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/PreviewActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-512">
-              <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+            <state relative-caret-position="350">
+              <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelectMultiImageUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/SelectMultiImageUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BitmapUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/BitmapUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_imagegrid.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_imagegrid.xml">
+      <file leaf-file-name="activity_preview.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_preview.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+            <state relative-caret-position="275">
+              <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_imagebucket.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_imagebucket.xml">
-          <provider editor-type-id="android-designer2">
+      <file leaf-file-name="icon_check_pressed.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/icon_check_pressed.png">
+          <provider selected="true" editor-type-id="images">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImagePagerActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImagePagerActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+            <state relative-caret-position="1914">
+              <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_sheet.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/layout/fragment_sheet.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="bg_indicator_selector.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/bg_indicator_selector.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -195,27 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item_image_bucket.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/layout/item_image_bucket.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="btn_gray_normal.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_gray_normal.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_image_grid.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/layout/item_image_grid.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -4823,18 +4730,18 @@
         <option value="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_image_grid.xml" />
         <option value="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_imagepager.xml" />
         <option value="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_image_bucket.xml" />
-        <option value="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImagePagerActivity.java" />
         <option value="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_imagerotate.xml" />
         <option value="$PROJECT_DIR$/selectavatar/src/main/res/layout/activity_preview.xml" />
-        <option value="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_preview.xml" />
         <option value="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImageBucketActivity.java" />
         <option value="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/BitmapCacheUtil.java" />
         <option value="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/ImageBucketAdapter.java" />
-        <option value="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/ImageGridAdapter.java" />
         <option value="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_imagegrid.xml" />
         <option value="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/item_image_grid.xml" />
         <option value="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImageGridActivity.java" />
         <option value="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/PreviewActivity.java" />
+        <option value="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/ImageGridAdapter.java" />
+        <option value="$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_preview.xml" />
+        <option value="$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImagePagerActivity.java" />
       </list>
     </option>
   </component>
@@ -4982,161 +4889,19 @@
               <option name="myItemId" value="SuperFrameApp" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
+              <option name="myItemId" value="SuperFrameApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="selectavatar" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperFrameApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperFrameApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperFrameApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperFrameApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperFrameApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperFrameApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperFrameApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperFrameApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectmultiimage" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -5147,6 +4912,14 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="selectavatar" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -5248,32 +5021,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperFrameApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectavatar" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectavatar" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="compress" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -5399,11 +5146,11 @@
       <recent name="com.dev.superframe.view" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Github\SuperFrameApp\selectmultiimage\src\main\res\drawable-xhdpi" />
       <recent name="E:\Github\SuperFrameApp\selectmultiimage\src\main\java\com\dev\selectmultiimage\utils" />
       <recent name="E:\Github\SuperFrameApp\app\src\main\res\layout" />
       <recent name="E:\Github\SuperFrameApp\selectmultiimage\src\main\res" />
       <recent name="E:\Github\SuperFrameApp\selectmultiimage\src\main\res\layout" />
-      <recent name="E:\Github\SuperFrameApp\selectmultiimage\src\main\res\drawable-xhdpi" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -5733,7 +5480,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865497" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -5749,8 +5496,8 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23283261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865497" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23283261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32865497" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -5784,101 +5531,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/superframe/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selectmultiimage/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selectavatar/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_multiimage.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dev/superframeapp/MultiImageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
-          <folding>
-            <element signature="e#1643#2749#0" expanded="true" />
-            <element signature="e#2748#2749#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selectavatar/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/uploadpictures_btn_del.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dev/superframeapp/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -5956,7 +5608,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_bg_relatly_line.xml">
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/bg_red_border.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -6066,27 +5718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_guide_bg_selector.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImagePagerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="61" column="67" selection-start-line="61" selection-start-column="67" selection-end-line="61" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/uploadpictures_add_pic.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/selectavatar/src/main/res/layout/activity_preview.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -6109,45 +5740,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_preview.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/selectavatar/src/main/java/com/dev/selectavatar/PreviewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-475">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/BitmapCacheUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/ImageBucketAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/ImageGridAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="119" column="26" selection-start-line="119" selection-start-column="26" selection-end-line="119" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -6223,18 +5819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImageGridActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="114" column="25" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5023#5187#0" expanded="true" />
-            <element signature="e#5186#5187#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/SelectMultiImageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -6243,10 +5827,141 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_left_rotate.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/utils/BitmapCacheUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/select_image.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/ImageBucketAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/bg_white_radius5.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImageGridActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1912">
+          <caret line="114" column="25" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/adapter/ImageGridAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="114" column="51" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_del.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/uploadpictures_btn_green_normal.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/btn_gray_normal.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/PreviewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-512">
-          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+        <state relative-caret-position="350">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/layout/activity_preview.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/icon_check_normal.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/icon_check_pressed.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/bg_indicator_focus.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/bg_indicator_defaut.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable/bg_indicator_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/res/drawable-xhdpi/no_image.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectmultiimage/src/main/java/com/dev/selectmultiimage/ImagePagerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1914">
+          <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
           <folding />
         </state>
       </provider>

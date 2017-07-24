@@ -97,7 +97,7 @@ public class SelectGridAdapter extends BaseAdapter {
         }
 
         if (position == pathList.size()) {
-            holder.ivDisplay.setImageBitmap(BitmapFactory.decodeResource(mContext.getResources(), R.drawable.uploadpictures_add_pic));
+            holder.ivDisplay.setImageBitmap(BitmapFactory.decodeResource(mContext.getResources(), R.drawable.select_image));
             holder.btnDel.setVisibility(View.GONE);
             // 限定能上传几张图片
             if (position == selectImgNum) {
@@ -106,10 +106,10 @@ public class SelectGridAdapter extends BaseAdapter {
         } else {
             if (pathList.get(position).contains("http")) {
                 Log.e("网络图片绑定", pathList.get(position));
-                Glide.with(mContext).load(pathList.get(position)).placeholder(R.drawable.uploadpictures_no_pic).into(holder.ivDisplay);
+                Glide.with(mContext).load(pathList.get(position)).placeholder(R.drawable.no_image).into(holder.ivDisplay);
             } else {
                 Log.e("本地图片绑定", pathList.get(position));
-                Glide.with(mContext).load(new File(pathList.get(position))).placeholder(R.drawable.uploadpictures_no_pic).into(holder.ivDisplay);
+                Glide.with(mContext).load(new File(pathList.get(position))).placeholder(R.drawable.no_image).into(holder.ivDisplay);
             }
 
             holder.btnDel.setTag(position);

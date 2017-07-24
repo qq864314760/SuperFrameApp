@@ -79,7 +79,7 @@ public class BitmapCacheUtil {
                 }
                 if (thumb == null) {
                     thumb = BitmapFactory.decodeResource(context.getResources(),
-                            R.drawable.uploadpictures_add_pic);
+                            R.drawable.select_image);
                     ;
                 }
                 put(path, thumb);

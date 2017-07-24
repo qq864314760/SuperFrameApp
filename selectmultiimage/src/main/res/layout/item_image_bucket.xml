@@ -12,7 +12,7 @@
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:scaleType="centerCrop"
-        android:src="@drawable/uploadpictures_no_pic"></ImageView>
+        android:src="@drawable/no_image"></ImageView>
 
     <ImageView
         android:id="@+id/iv_isselected"
