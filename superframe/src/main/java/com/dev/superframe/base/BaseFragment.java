@@ -219,7 +219,7 @@ public abstract class BaseFragment extends Fragment implements FragmentPresenter
 			Log.w(TAG, "showProgressDialog  isAlive() == false >> return;");
 			return;
 		}
-		context.showProgressDialog(dialogTitle, dialogMessage);
+		context.showProgressDialog(dialogMessage);
 	}
 
 	/** 隐藏加载进度

@@ -1,7 +1,6 @@
 package com.dev.superframe.base;
 
 import android.annotation.TargetApi;
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -19,6 +18,7 @@ import android.widget.Toast;
 import com.dev.superframe.R;
 import com.dev.superframe.base.presenter.ActivityPresenter;
 import com.dev.superframe.manger.ThreadManager;
+import com.dev.superframe.ui.dialog.LoadingDialog;
 import com.dev.superframe.utils.StringUtil;
 import com.dev.superframe.utils.SystemBarTintUtil;
 
@@ -100,7 +100,7 @@ public abstract class BaseActivity extends SwipeBackActivity implements Activity
     @Override
     public void setContentView(int layoutResID) {
         super.setContentView(layoutResID);
-        SystemBarTintUtil.setSystemBarTint(getActivity(),R.color.theme_color);
+        SystemBarTintUtil.setSystemBarTint(getActivity(), R.color.theme_color);
         tvBaseTitle = (TextView) findViewById(R.id.tv_base_title);//绑定默认标题TextView
     }
 
@@ -177,18 +177,13 @@ public abstract class BaseActivity extends SwipeBackActivity implements Activity
     //显示与关闭进度弹窗方法<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     /**
-     * 进度弹窗
-     */
-    protected ProgressDialog progressDialog = null;
-
-    /**
      * 展示加载进度条,无标题
      *
      * @param stringResId
      */
     public void showProgressDialog(int stringResId) {
         try {
-            showProgressDialog(null, context.getResources().getString(stringResId));
+            showProgressDialog(context.getResources().getString(stringResId));
         } catch (Exception e) {
             Log.e(TAG, "showProgressDialog  showProgressDialog(null, context.getResources().getString(stringResId));");
         }
@@ -199,38 +194,19 @@ public abstract class BaseActivity extends SwipeBackActivity implements Activity
      *
      * @param message
      */
-    public void showProgressDialog(String message) {
-        showProgressDialog(null, message);
-    }
-
-    /**
-     * 展示加载进度条
-     *
-     * @param title   标题
-     * @param message 信息
-     */
-    public void showProgressDialog(final String title, final String message) {
+    public void showProgressDialog(final String message) {
         runUiThread(new Runnable() {
             @Override
             public void run() {
-                if (progressDialog == null) {
-                    progressDialog = new ProgressDialog(context);
-                }
-                if (progressDialog.isShowing() == true) {
-                    progressDialog.dismiss();
-                }
-                if (StringUtil.isNotEmpty(title, false)) {
-                    progressDialog.setTitle(title);
+                if (LoadingDialog.mLoadingDialog.isShowing() == true) {
+                    LoadingDialog.cancelDialogForLoading();
                 }
                 if (StringUtil.isNotEmpty(message, false)) {
-                    progressDialog.setMessage(message);
+                    LoadingDialog.showDialogForLoading(getActivity(), message, true);
                 }
-                progressDialog.setCanceledOnTouchOutside(false);
-                progressDialog.show();
             }
         });
     }
-
 
     /**
      * 隐藏加载进度
@@ -239,13 +215,9 @@ public abstract class BaseActivity extends SwipeBackActivity implements Activity
         runUiThread(new Runnable() {
             @Override
             public void run() {
-                //把判断写在runOnUiThread外面导致有时dismiss无效，可能不同线程判断progressDialog.isShowing()结果不一致
-                if (progressDialog == null || progressDialog.isShowing() == false) {
-                    Log.w(TAG, "dismissProgressDialog  progressDialog == null" +
-                            " || progressDialog.isShowing() == false >> return;");
-                    return;
+                if (LoadingDialog.mLoadingDialog.isShowing() == true) {
+                    LoadingDialog.cancelDialogForLoading();
                 }
-                progressDialog.dismiss();
             }
         });
     }
@@ -313,6 +285,18 @@ public abstract class BaseActivity extends SwipeBackActivity implements Activity
     }
     //启动新Activity方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    //获取Intent传值方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    public String getIntentText(String key) {
+        return getIntent().getExtras() != null && getIntent().getExtras().containsKey(key) ? getIntent().getExtras().getString(key) : "";
+    }
+    //获取Intent传值方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    //获取View方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    public View getView( int viewId) {
+        View view = LayoutInflater.from(getActivity()).inflate(viewId, null);
+        return view;
+    }
+    //获取View方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     //show short toast 方法<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -357,7 +341,6 @@ public abstract class BaseActivity extends SwipeBackActivity implements Activity
         });
     }
     //show short toast 方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
 
     //运行线程 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -510,13 +493,10 @@ public abstract class BaseActivity extends SwipeBackActivity implements Activity
         tvBaseTitle = null;
 
         fragmentManager = null;
-        progressDialog = null;
         threadNameList = null;
 
         intent = null;
-
         context = null;
-
         Log.d(TAG, "onDestroy >>>>>>>>>>>>>>>>>>>>>>>>\n");
     }
 
